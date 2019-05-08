@@ -1,0 +1,27 @@
+James White
+Machine Learning 4.22.19
+
+	The file test_svm.py accepts the following command line arguments:
+
+		wine - Uses wine dataset for classification, with '2' values removed.
+		[default] - uses iris dataset for classification similarly.
+
+		multi - Runs a long series of tests through different parameters, recording the best set. Uses iris
+				by default, but can also take "wine" arg.
+
+		info - Adds print statements of intermediate params through info_svm.py. I'd recommend using it with 1 or 2 		for readability.
+		1 - First test, easily linearly seperable with two svms.
+		2 - Similar test, but gets 3 svms.
+		3 - XOR, demonstrates model failure.
+
+	One observation is that kernel.linear performs poorly for the larger datasets. After some testing, I used the
+	test found with the "multi" flag to brainstorm best parameters with many iterations.
+
+	What I observed was fairly natural, but I'm especially struck by how varied the results generated from the cvxopt "mystery math" can be. Also, I'm quite sure the best results in the multi test are over fit and lucky hits, and one could easily remodify them and dig deeper.
+
+	*Note on "multi" color scheme:*
+	White - Total iteration count.
+	Yellow - # of support vectors chosen.
+	Red - Poor performance or 0 support vectors.
+	Blue - < .5 success.
+	Green - > .5 success.

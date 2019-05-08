@@ -1,0 +1,12 @@
+James White
+Machine Learning 4.27.19
+
+	I trust this project will appear straightforward. It uses svm, particularly the iris dataset, testing it as it moves from dim. 4 to dim. 3.
+
+	I've printed the transformation of the first five data points from both training and testing for comparison.
+
+	*Note on color scheme:*
+	Yellow - # of support vectors chosen.
+	Red - Incorrect
+	Blue - Correct "-1"
+	Green - Correct "1"

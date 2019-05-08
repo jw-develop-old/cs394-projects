@@ -1,0 +1,35 @@
+The goal of this project is to implement the k Nearest Neighbors classifier.
+
+Write a function in Python 3 with the following signature:
+
+knn(data, targets, k, metric, inputs)
+where
+
+data is an array-like with shape (n,m), containing n data points each of dimension m.
+targets is a list of size n containing the target values for the data points in data.
+k is the number of neighbors to consider.
+metric is a function that computes the distance between two vectors (see below).
+inputs is an array-like with shape (x,m), containing x new data points each of dimension m.
+This function should return a list of length x containing the estimated targets for the data points in inputs, using the k nearest neighbors method.
+
+Additionally, write functions euclidean and manhattan, which compute the Euclidean distance (also called L2 norm) and the Manhattan distance (also called L1 norm or city-block distance), respectively, such as could be passed for the formal parameter metric in your knn function.
+
+You should implement this algorithm yourself. You should not use sklearn.neighbors.KNeighborsClassifier or any similar available implementation. You may, however, use library functions for pieces of your implementation as long as they do not violate the spirit of an assignment to implement KNN. As a rule of thumb, things from numpy or scipy are fair game, but things from sklearn are not (except that you may use the data sets from sklearn for testing, and you may use sklearn.neighbors.KNeighborsClassifier or something similar as a point of comparison for your implementation's performance). If you're not sure whether or not something is "fair game", please ask.
+
+Test your implementation on at least two data sets and report on the performance. You may use data sets that are included in the libraries or you can find data sets from sites like Kaggle. (Our textbook has an appendix on the data sets it uses starting on pg 677 and claims that they can be downloaded. However, the URL listed on the page is out of date. It forwards to the author's website which does contain information about the book, but I cannot find the data sets as referenced in the book.)
+
+Submit your code in two files, knn.py and testknn.py so that the following code will work:
+
+import knn
+
+knn.knn(X_train, y_train, 5, knn.euclidean, X_test)
+where X_train etc is some variable defined locally but knn, euclidean, etc is defined in your file. Note that the knn function doesn't have to contain the algorithm itself---you may have it as a wrapper for code you organize as you see fit. Moreover, the following should work from the command line:
+
+python3 testknn.py
+Which should display information about the performance of your classifier.
+
+Finally, include a file README that (briefly) describes how you tested your classifier and to what results, and anything else you think it would be good for me to know in order for me to give your submission the fairest grading.
+
+Copy knn.py, testknn.py, README, and any other files your code needs (such as data sets for testing) to
+
+/cslab/class/cs394/[your userid]/knn

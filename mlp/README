@@ -1,0 +1,12 @@
+James White
+Machine Learning 2.29.19
+
+	I wrote the algorithm for one perceptron, and I believe it works correctly. However, I failed to implement the version in which many perceptrons work together.
+
+	My best attempt to write this is commented out beneath my method in mlp.py, which I hope came close at least.
+
+	For resources, I glanced at the three resources placed in the lab, but relied almost entirely on the handouts and textbook.
+
+	For what it's worth, I've included a file called "previous.py," which contains many different attempts to construct the algorithm, mostly for my reference but also in case it influences grading. Also, I have written a few items to print results, but because I never solved the algorithm, I simply made the tests print. There is a line in mlp.py which allows for some more details to be printed, showing each iteration.
+
+	Thanks.

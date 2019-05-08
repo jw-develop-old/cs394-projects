@@ -1,0 +1,14 @@
+James White
+Machine Learning 2.20.19
+
+	My project consists of testknn.py which imports two datasets, the first being library dataset load_wine from sklearn and the second is a dataset pulled from this url:
+
+	https://www.getdrip.com/forms/798345213/submissions
+
+	The file imgs.py is used to convert the three folders into a useable dataset, reading .png files and turning them into vectors.
+
+	testknn.py then calls tests in t_helper.py to run knn.knn() on both datasets with varying test_sizes, to experiment with how prediction stability changes. It also has an optional randomness parameter.
+
+	Last, it outputs its results to two different files, "wine_results.csv" and "scene_results.csv", for easier viewing. Also, to test more test_sizes, one must simply change the parameter 'val' in t_helper.py.
+
+	I also did use LabelEncoder from Sklearn in my imgs.py file, but it was for generating a dataset beforehand, not to assist knn.knn() in any way.
